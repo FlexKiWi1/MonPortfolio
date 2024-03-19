@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'lucioleregular';
-  src: url('./font/luciole-regular-webfont.woff2') format('woff2'),
-       url('./font/luciole-regular-webfont.woff') format('woff');
+  src: url('../font/luciole-regular-webfont.woff2') format('woff2'),
+       url('../font/luciole-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,14 +9,22 @@
 @font-face {
   font-family: 'kaushan_scriptregular';
   /* Chemin vers la police Kaushan Script */
-  src: url('font/kaushanscript-regular-webfont.woff2') format('woff2'),
-       url('font/kaushanscript-regular-webfont.woff') format('woff');
+  src: url('../font/kaushanscript-regular-webfont.woff2') format('woff2'),
+       url('../font/kaushanscript-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 *{
-  cursor: url("../images/curseurs-de-souris-material-design-rounded/Pointer.cur"), pointer;
+  cursor: url("../images/cursor/Pointer.cur") 10 14, pointer;
+}
+
+*::selection {
+  background-color: #079BEE;
+}
+
+a:hover, #back-to-top:hover, button:hover, #logo:hover {
+  cursor: url("../images/cursor/link.cur") 10 14, pointer;
 }
 
 html{
@@ -42,28 +50,28 @@ header img{
 }
 
 button {
-background: #00c7a2;
-border-radius: 999px;
-box-shadow: #00c7a2 0 10px 20px -10px;
-box-sizing: border-box;
-color: #FFFFFF;
-cursor: pointer;
-font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-opacity: 1;
-outline: 0 solid transparent;
-padding: 8px 18px;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-width: fit-content;
-word-break: break-word;
-border: 0;
-position: fixed;
-right: 5em;
-top: 1.3em;
+  background: #00c7a2;
+  border-radius: 999px;
+  box-shadow: #00c7a2 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  position: fixed;
+  right: 5em;
+  top: 1.3em;
 }
 
 #back-to-top {
@@ -185,8 +193,8 @@ a{
 
 /* Ma scolarité */
 #scolarite > h1 {
-  font-size: 2em;
-  margin-left: 45%;
+  font-size: 4em;
+  margin-left: 35%;
   margin-top: 4em;
 }
 
