@@ -141,15 +141,19 @@ a{
 #presentation_img{
   display: flex;
   width: 100%;
-  position: absolute;
-  inset: 0;
-  top: 10em;
+  position: relative;
+  top: -15em;
   z-index: -1;
+}
+
+#presentation{
+  height: 20em;
 }
 
 /* Moi */
 #moi {
   margin-top: 35em;
+  margin-left: -5em;
 }
 
 #moi > h1{
@@ -180,14 +184,14 @@ a{
   height: 530px;
   position: absolute;
   right: 5em;
-  top: 55em;
+  top: 70em;
   z-index: -1;
 }
 
 #img_futurDev {
   position: absolute;
   right: 0em;
-  top: 41em;
+  top: 65em;
   z-index: -10;
 }
 
