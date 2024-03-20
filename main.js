@@ -1,5 +1,3 @@
-import anime from "animejs";
-
 function backToTop(){
     scrollTo(0, 0);
 }
@@ -41,7 +39,4 @@ createTypingEffect("Loris Caruhel", '#mon_nom', 50);
 createTypingEffect("Ma scolarité", '#scolarite-heading', 50);
 createTypingEffect("Futer Développeur", '#moi-heading', 50);
 
-anime({
-    targets: '.square',
-    translateX: 250
-});
+
