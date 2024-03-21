@@ -1,16 +1,15 @@
 @font-face {
   font-family: 'lucioleregular';
-  src: url('../font/luciole-regular-webfont.woff2') format('woff2'),
-       url('../font/luciole-regular-webfont.woff') format('woff');
+  src: url('./font/luciole-regular-webfont.woff2') format('woff2'),
+       url('./font/luciole-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'kaushan_scriptregular';
-  /* Chemin vers la police Kaushan Script */
-  src: url('../font/kaushanscript-regular-webfont.woff2') format('woff2'),
-       url('../font/kaushanscript-regular-webfont.woff') format('woff');
+  src: url('./font/kaushanscript-regular-webfont.woff2') format('woff2'),
+       url('./font/kaushanscript-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
