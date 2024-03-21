@@ -15,7 +15,7 @@
 }
 
 *{
-  cursor: url("../images/cursor/Pointer.cur") 10 14, pointer;
+  cursor: url("./images/cursor/Pointer.cur") 10 14, pointer;
 }
 
 *::selection {
@@ -23,7 +23,7 @@
 }
 
 a:hover, #back-to-top:hover, button:hover, #logo:hover {
-  cursor: url("../images/cursor/link.cur") 10 14, pointer;
+  cursor: url("./images/cursor/link.cur") 10 14, pointer;
 }
 
 html{
@@ -55,7 +55,7 @@ button {
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-family: 'lucioleregular', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -191,7 +191,7 @@ a{
   position: absolute;
   right: 0em;
   top: 65em;
-  z-index: -10;
+  z-index: -2;
 }
 
 /* Ma scolarité */
@@ -271,4 +271,13 @@ a{
 #container {
   position: relative;
   top: -10em; 
+}
+
+/* Placement de l'animation 3D */
+#canvas{
+  display: flex;
+  width: 100%;
+  inset: 0;
+  position: fixed;
+  z-index: -50;
 }
