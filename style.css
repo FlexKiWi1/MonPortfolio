@@ -222,8 +222,8 @@ a{
   position: relative;
   width: 280px;
   font-size: 0.90rem;
-  color: black;
-  background: white;
+  color: white;
+  background: #141414;
   border: solid 5px;
   border-image: linear-gradient(90deg, rgba(16,179,119,1) 0%, rgba(0,213,238,1) 100%, rgba(0,212,255,1) 100%);
   border-image-slice: 1;

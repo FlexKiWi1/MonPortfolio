@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 
-function backToTop(){
-    scrollTo(0, 0);
+function backToTop(x, y) {
+    window.scrollTo(x, y);
 }
 
 function createTypingEffect(text, elementOuEcrire, spd) {
@@ -118,10 +118,6 @@ function computeGeometry() {
     return geometry
   }
   
-  
-
-
-
 function animeGeometry(geometry, progress) {
   const space = 4, nb = 100, amp = 0.1, pi2= Math.PI*2
   const phase = progress
