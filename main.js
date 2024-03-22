@@ -136,3 +136,36 @@ function animeGeometry(geometry, progress) {
   geometry.attributes.position.needsUpdate = true
   geometry.attributes.color.needsUpdate = true 
 }
+
+
+function detecterOS() {
+  var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+
+  if (macPlatforms.indexOf(platform) !== -1) {
+      os = 'Mac OS';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'iOS';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'Windows';
+  } else if (/Android/.test(userAgent)) {
+      os = 'Android';
+  } else if (/Linux/.test(platform)) {
+      os = 'Linux';
+  }
+
+  return os;
+}
+
+function afficherPopupSiLinux() {
+    var os = detecterOS();
+    if (os === 'Linux') {
+        alert('Pour une meilleur experience de mon portfolio utiliser windows ou mac OS.');
+    }
+}
+
+afficherPopupSiLinux();
