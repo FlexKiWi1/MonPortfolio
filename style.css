@@ -49,29 +49,41 @@ header img{
 }
 
 button {
-  background: #00c7a2;
-  border-radius: 999px;
-  box-shadow: #00c7a2 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: 'lucioleregular', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  --glow-color: #079BEE;
+  --glow-spread-color: rgba(78, 193, 175, 0.781);
+  --enhanced-glow-color: #4EC1AF;
+  --btn-color: #141414;
+  border: .25em solid var(--glow-color);
+  padding: 1em 2em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 10em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .50em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
   position: fixed;
-  right: 5em;
+  right: 2em;
   top: 1.3em;
-}
+  transition: all 0.3s;
+ }
+ 
+ button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
 
 #back-to-top {
   display: inline-block;
@@ -270,7 +282,7 @@ a{
 
 #container {
   position: relative;
-  top: -10em; 
+  top: -11em; 
 }
 
 /* Placement de l'animation 3D */

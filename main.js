@@ -1,9 +1,5 @@
 import * as THREE from 'three'
 
-function backToTop(x, y) {
-    window.scrollTo(x, y);
-}
-
 function createTypingEffect(text, elementOuEcrire, spd) {
     let i = 0;
     const speed = spd;
@@ -39,7 +35,7 @@ function createTypingEffect(text, elementOuEcrire, spd) {
 createTypingEffect("Mes expériences", '#experiences-heading', 50);
 createTypingEffect("Loris Caruhel", '#mon_nom', 50);
 createTypingEffect("Ma scolarité", '#scolarite-heading', 50);
-createTypingEffect("Futer Développeur", '#moi-heading', 50);
+createTypingEffect("Futur Développeur", '#moi-heading', 50);
 
 
 window.canvas = document.getElementById('canvas')
