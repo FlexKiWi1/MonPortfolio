@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-
+    
     <!-- Lien vers fichier css et JavaScript -->
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="main.js"></script>
@@ -21,28 +21,29 @@
         <ul id="menu">
             <li><a href="index.html#scolarite">Ma scolarité</a></li>
             <li><a href="index.html#experiences">Mes experiences</a></li>
-            <li><a href="">Mes compétences</a></li>
-            <li><a href="">Mes projets</a></li>
+            <li><a href="index.html#leBUT">Le BUT Informatique</a></li>
+            <li><a href="index.html#competences">Mes compétences</a></li>
         </ul>
         <a href="/Documents/CARUHEL_LORIS_CV.pdf"><button type="button">Mon CV</button></a>
     </header>
-
+    
     <main>
         <section id="presentation">
             <p id="mon_nom"></p>
             <p>Mon portfolio</p>
             <img src="images/vague.png" alt="Vague_deco" id="presentation_img">
         </section>
-
+        
         <section id="moi">
             <h1 id="moi-heading"></h1>
             <ul>
                 <li>Qui suis-je ?</li>
                 <div>
                     <p> 
-                        Je m'appelle Loris Caruhel, j'ai 18 ans et je suis en 1ère année de BUT Informatique à l'IUT de Lannion.
-                        J'aimerais devenir développeur dans le futur voir même ingénieur en Informatique, je voudrais également
-                        réalisé toutes ces études à partir de la 2ème année en alternance.
+                        Je m'appelle Loris Caruhel, j'ai 18 ans et je suis en 1ère année de BUT Informatique à 
+                        <em><a href="https://iut-lannion.univ-rennes.fr/" style="text-decoration: underline;">l'IUT de Lannion</a>.</em>
+                        J'aimerais devenir développeur dans le futur voir même ingénieur en Informatique, à partir de la deuxième année
+                        de ce BUT je voudrais faire mon parcours en alternance.
                     </p>
                 </div>
                 <li>Pourquoi développeur ?</li>
@@ -66,7 +67,20 @@
             <img src="images/vague1.png" alt="Vague_deco" id="img_futurDev">
         </section>
         
-
+        <section id="leBUT">
+            <div class="card">
+                <div class="card2">
+                    <h2>Qu'est ce que le BUT Informatique ?</h2>
+                    <p>
+                        Le BUT Informatique vise à former des professionnels polyvalents dotés de six compétences clés : 
+                        la conception et le développement de solutions informatiques, la modélisation et la gestion des 
+                        données, les systèmes et réseaux informatiques, le développement logiciel, savoir s'adapter aux technologies 
+                        émergentes, ainsi que travailler en équipe.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
         <section id="scolarite">
             <h1 id="scolarite-heading"></h1>
             <img src="images/vague3.png" alt="Vague">
@@ -112,13 +126,13 @@
                 </div>
             </article>
         </section>
-
+        
         <section id="experiences">
             <h1 id="experiences-heading"></h1>
             <article>
                 <img src="images/Vague4.png" alt="Vague">
                 <img src="images/ligne_experiences.png" alt="ligne_chronologique">
-
+                
                 <div id="container">
                     <div id="stage3eme">
                         <h3>Stage de 3ème</h3>
@@ -127,35 +141,35 @@
                 </div>
             </article>
         </section>
-
+        
         <section id="competences">
             <h1 id="competences-heading"></h1>
             <div class="container_competence">
-                <div class="competence1">
-
+                <div class="deco_competence competence1">
+                    Développement d'applications
                 </div>
-                <div class="competence2">
-
+                <div class="deco_competence competence2">
+                    Optimisation d'applications
                 </div>
-                <div class="competence3">
-
+                <div class="deco_competence competence3">
+                    Administrer des systèmes complexes
                 </div>
-                <div class="competence4">
-
+                <div class="deco_competence competence4">
+                    Gérer des données de l'information
                 </div>
-                <div class="competence5">
-
+                <div class="deco_competence competence5">
+                    Conduire un projet
                 </div>
-                <div class="competence6">
-
+                <div class="deco_competence competence6">
+                    Travailler et résonner en équipe
                 </div>
             </div>
         </section>
-
+        
         <div id="back-to-top" onclick="window.scrollTo(0, 0)"><a>⇡</a></div>
         <canvas id="canvas"></canvas>
     </main>
-
+    
     <footer>
         
     </footer>
