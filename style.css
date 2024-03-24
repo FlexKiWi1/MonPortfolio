@@ -209,7 +209,7 @@ a{
 /* Ma scolarité */
 #scolarite > h1 {
   font-size: 4em;
-  margin-left: 35%;
+  margin-left: 9em;
   margin-top: 4em;
 }
 
@@ -285,6 +285,17 @@ a{
   top: -11em; 
 }
 
+/* Compétences */
+#container_competence{
+  position: absolute;
+  top: 50em;
+}
+
+#competences-heading{
+  font-size: 4em;
+}
+
+
 /* Placement de l'animation 3D */
 #canvas{
   display: flex;
@@ -293,3 +304,4 @@ a{
   position: fixed;
   z-index: -50;
 }
+

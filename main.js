@@ -36,6 +36,7 @@ createTypingEffect("Mes expériences", '#experiences-heading', 50);
 createTypingEffect("Loris Caruhel", '#mon_nom', 50);
 createTypingEffect("Ma scolarité", '#scolarite-heading', 50);
 createTypingEffect("Futur Développeur", '#moi-heading', 50);
+createTypingEffect("Mes Compétences", '#competences-heading', 50);
 
 
 window.canvas = document.getElementById('canvas')
@@ -126,10 +127,9 @@ function animeGeometry(geometry, progress) {
       const z = j*(space/nb)-space/2
       const y = amp * ( Math.cos(x*pi2*fre+phase) + Math.sin(z*pi2*fre+phase) )
       geometry.attributes.position.setY(k, y)
-      // Utilisation des couleurs spécifiées
-      geometry.attributes.color.setX(k, 0.306) // Rouge #4E
-      geometry.attributes.color.setY(k, 0.756) // Vert #C1
-      geometry.attributes.color.setZ(k, 0.686) // Bleu #AF
+      geometry.attributes.color.setX(k, 0.306)
+      geometry.attributes.color.setY(k, 0.756) 
+      geometry.attributes.color.setZ(k, 0.686) 
       k ++
     }
   }
