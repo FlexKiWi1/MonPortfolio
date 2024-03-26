@@ -25,7 +25,7 @@
   background-color: #079BEE;
 }
 
-a:hover, #back-to-top:hover, button:hover, #logo:hover, .list span{
+a:hover, #back-to-top:hover, button:hover, #logo:hover, .list span, .icon:hover{
   cursor: url("./images/cursor/link.cur") 10 14, pointer;
 }
 
@@ -37,6 +37,9 @@ body{
   font-family: 'lucioleregular', Arial, Helvetica, sans-serif;
   background-color: #141414;
   color: white;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 header{
@@ -69,8 +72,8 @@ button {
          inset 0 0 .50em .25em var(--glow-color);
   text-shadow: 0 0 .5em var(--glow-color);
   position: fixed;
-  right: 2em;
-  top: 1.3em;
+  right: 5em;
+  top: 1em;
   transition: all 0.3s;
  }
  
@@ -88,7 +91,7 @@ button {
          inset 0 0 .5em .25em var(--glow-color);
  }
 
-#back-to-top {
+.back-to-top {
   display: inline-block;
   position: fixed;
   bottom: 15px;
@@ -105,7 +108,7 @@ button {
 }
 
 /* Menu */
-#menu{
+.menu{
   color: white;
   display: flex;
   position: fixed;
@@ -124,7 +127,7 @@ button {
   z-index: 1000;
 }
 
-#menu > li{
+.menu > li{
   margin: 5px 50px;
 }
 
@@ -133,7 +136,7 @@ a{
   text-decoration: none;
 }
 
-#menu li:hover {
+.menu li:hover {
   transform: scale(1.05);
   background: linear-gradient(90deg, rgba(16,179,119,1) 0%, rgba(0,213,238,1) 100%, rgba(0,212,255,1) 100%);
   border-radius: 10px;
@@ -142,103 +145,101 @@ a{
 
 
 /* Présentation */
-#mon_nom{
+.mon_nom{
   font-size: 5em;
-  margin-left: 2em;
-  margin-top: 2em;
+  position: relative;
+  top: 3em;
+  left: 2em;
   font-family: 'kaushan_scriptregular', Arial, Helvetica, sans-serif;
   order: 1;
 }
 
-#presentation > p + p{
+.presentation > p + p{
   font-size: 2em;
-  margin-left: 5.2em;
-  margin-top: -2.5em;
+  position: relative;
+  top: 7em;
+  left: 5.1em;
   order: 1;
 }
 
-#presentation_img{
+.presentation_img{
   display: flex;
   width: 100%;
   position: relative;
-  top: -15em;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
-#presentation{
-  height: 20em;
-}
-
 /* Moi */
-#moi {
-  margin-top: 35em;
-  margin-left: -5em;
+.moi {
+  position: relative;
+  top: -10em;
 }
 
-#moi > h1{
+.moi > h1{
   font-size: 2em;
   margin-left: 8.2em;
   margin-top: 12em;
 }
 
-#moi > ul > li{
+.moi > ul > li{
   font-size: 1.5em;
   margin-left: 5em;
   margin-top: 1em;
   list-style-type:decimal-leading-zero;
 }
 
-#moi > ul p{
+.moi > ul p{
   font-size: 1em;
   margin-left: 10em;
   margin-top: 1em;
 }
 
-#moi ul > div{
+.moi ul > div{
   width: 750px;
 }
 
-#moi_img{
+.moi_img{
   width: 500px;
   height: 530px;
-  position: absolute;
   right: 5em;
-  top: 70em;
+  top: 5em;
+  position: absolute;
   z-index: -1;
 }
 
-#img_futurDev {
+.img_futurDev {
   position: absolute;
-  right: 0em;
-  top: 65em;
+  right: 0;
+  top: 5em;
   z-index: -2;
 }
 
 /* Ma scolarité */
-#scolarite > h1 {
+.scolarite > h1 {
   font-size: 4em;
-  margin-left: 9em;
-  margin-top: 4em;
+  position: relative;
+  left: 12em;
 }
 
-#scolarite > img{
+.scolarite > img{
   width: 100%;
   height: 30em;
   position: relative;
-  top: -5em;
   z-index: -1;
 }
 
-#scolarite > ul{
+.scolarite > ul{
   display: flex;
   margin: -6em 0em; 
 }
 
-#scolarite > ul > li{
+.scolarite > ul > li{
   margin: 0px 10em;
 }
 
-#scolarite .diplome {
+.scolarite .diplome {
   position: relative;
   width: 280px;
   font-size: 0.90rem;
@@ -250,55 +251,58 @@ a{
   padding: 0px 5px;
 }
 
-#scolarite .diplome1{
+.scolarite .diplome1{
   bottom: 25em;
   left: 5em;
 }
 
-#scolarite .diplome2{
+.scolarite .diplome2{
   bottom: 32em;
   left: 35em;
 }
 
-#scolarite .diplome3{
+.scolarite .diplome3{
   bottom: 37em;
   left: 65em;
 }
 
 /* Expériences */
-#experiences h1{
+.experiences h1{
   font-size: 4em;
-  margin-left: 1em;
-  margin-top: -6em;
+  position: relative;
+  top: -1em;
+  left: 2em;
 }
 
-#experiences img{
+.experiences img{
   height: 30em;
   position: relative;
   top: -10em;
   z-index: -1;
 }
 
-#nomDiplome{
+.nomDiplome{
   font-size: 1.2em;
 }
 
-#experiences article{
+.experiences article{
   display: flex;
   font-size: 0.8em;
 }
 
-#container {
+.container {
   position: relative;
   top: -11em; 
 }
 
 /* Le BUT Informatique */
-#leBUT {
+.leBUT {
   display: flex;
   width: 100%;
   height: 25em;
   justify-content: center;
+  position: relative;
+  top: -5em;
 }
 
 .card {
@@ -332,6 +336,19 @@ a{
  }
 
 /* Compétences */
+.competences{
+  position: relative; 
+  display:flex;
+  width:100%;
+  height:25em;
+  justify-content: center;
+  font-size: 2.5em;
+}
+
+.competences-heading{
+  margin: 1em 2em;
+}
+
 .list {
   position: relative;
 }
@@ -353,7 +370,7 @@ a{
   color: #fce4ec;
   list-style: none;
   margin: 4px 0;
-  border-left: 2px solid #00c7a2;
+  border-left: 2px solid #00C7A2;
   transition: 0.5s;
 }
 
@@ -371,7 +388,7 @@ a{
 }
 
 .list ul li:hover span {
-  color: #111;
+  color: #2c2b2b;
 }
 
 .list ul li:before {
@@ -387,10 +404,130 @@ a{
 
 /* Placement de l'animation 3D */
 #canvas{
-  display: flex;
   width: 100%;
-  inset: 0;
   position: fixed;
+  inset: 0;
   z-index: -50;
 }
 
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 15em;
+  background: #00C7A2;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu_footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__item {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("./images/wave1_footer.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}

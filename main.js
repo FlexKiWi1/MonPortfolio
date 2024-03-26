@@ -32,11 +32,11 @@ function createTypingEffect(text, elementOuEcrire, spd) {
     });
 }
 
-createTypingEffect("Mes expériences", '#experiences-heading', 50);
-createTypingEffect("Loris Caruhel", '#mon_nom', 50);
-createTypingEffect("Ma scolarité", '#scolarite-heading', 50);
-createTypingEffect("Futur Développeur", '#moi-heading', 50);
-createTypingEffect("Mes Compétences", '#competences-heading', 50);
+createTypingEffect("Expériences", '.experiences-heading', 100);
+createTypingEffect("Loris Caruhel", '.mon_nom', 100);
+createTypingEffect("Scolarité", '.scolarite-heading', 100);
+createTypingEffect("Futur Développeur", '.moi-heading', 100);
+createTypingEffect("Compétences", '.competences-heading', 100);
 
 
 window.canvas = document.getElementById('canvas')

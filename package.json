@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.2",
+    "bootstrap-icons": "^1.11.3",
     "dat.gui": "^0.7.9",
     "three": "^0.162.0",
     "treejs": "^0.6.2"
