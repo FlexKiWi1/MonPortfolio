@@ -40,6 +40,7 @@ body{
   height:100%;
   width:100%;
   position:absolute;
+  overflow-x: hidden;
 }
 
 header{
@@ -148,8 +149,8 @@ a{
 .mon_nom{
   font-size: 5em;
   position: relative;
-  top: 3em;
-  left: 2em;
+  top: 35vh;
+  left: 20vh;
   font-family: 'kaushan_scriptregular', Arial, Helvetica, sans-serif;
   order: 1;
 }
@@ -157,8 +158,8 @@ a{
 .presentation > p + p{
   font-size: 2em;
   position: relative;
-  top: 7em;
-  left: 5.1em;
+  top: 32vh;
+  left: 21vh;
   order: 1;
 }
 
@@ -166,34 +167,33 @@ a{
   display: flex;
   width: 100%;
   position: relative;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: -1;
 }
 
 /* Moi */
 .moi {
   position: relative;
-  top: -10em;
+  top: -20vh;
 }
 
-.moi > h1{
+.moi-heading{
   font-size: 2em;
-  margin-left: 8.2em;
-  margin-top: 12em;
+  margin-left: 35vh;
+  margin-top: 60vh;
 }
 
 .moi > ul > li{
   font-size: 1.5em;
-  margin-left: 5em;
-  margin-top: 1em;
-  list-style-type:decimal-leading-zero;
+  margin-left: 20vh;
+  margin-top: 1vh;
+  list-style-type: decimal-leading-zero;
 }
 
 .moi > ul p{
   font-size: 1em;
-  margin-left: 10em;
-  margin-top: 1em;
+  margin-left: 18vh;
+  margin-top: 2vh;
 }
 
 .moi ul > div{
@@ -203,8 +203,8 @@ a{
 .moi_img{
   width: 500px;
   height: 530px;
-  right: 5em;
-  top: 5em;
+  right: 15vh;
+  top: 10vh;
   position: absolute;
   z-index: -1;
 }
@@ -212,116 +212,41 @@ a{
 .img_futurDev {
   position: absolute;
   right: 0;
-  top: 5em;
+  top: 10vh;
   z-index: -2;
 }
 
-/* Ma scolarité */
-.scolarite > h1 {
-  font-size: 4em;
-  position: relative;
-  left: 12em;
-}
-
-.scolarite > img{
-  width: 100%;
-  height: 30em;
-  position: relative;
-  z-index: -1;
-}
-
-.scolarite > ul{
-  display: flex;
-  margin: -6em 0em; 
-}
-
-.scolarite > ul > li{
-  margin: 0px 10em;
-}
-
-.scolarite .diplome {
-  position: relative;
-  width: 280px;
-  font-size: 0.90rem;
-  color: white;
-  background: #141414;
-  border: solid 5px;
-  border-image: linear-gradient(90deg, rgba(16,179,119,1) 0%, rgba(0,213,238,1) 100%, rgba(0,212,255,1) 100%);
-  border-image-slice: 1;
-  padding: 0px 5px;
-}
-
-.scolarite .diplome1{
-  bottom: 25em;
-  left: 5em;
-}
-
-.scolarite .diplome2{
-  bottom: 32em;
-  left: 35em;
-}
-
-.scolarite .diplome3{
-  bottom: 37em;
-  left: 65em;
-}
-
-/* Expériences */
-.experiences h1{
-  font-size: 4em;
-  position: relative;
-  top: -1em;
-  left: 2em;
-}
-
-.experiences img{
-  height: 30em;
-  position: relative;
-  top: -10em;
-  z-index: -1;
-}
-
-.nomDiplome{
-  font-size: 1.2em;
-}
-
-.experiences article{
-  display: flex;
-  font-size: 0.8em;
-}
-
-.container {
-  position: relative;
-  top: -11em; 
-}
-
 /* Le BUT Informatique */
-.leBUT {
+#leBUT {
   display: flex;
   width: 100%;
-  height: 25em;
+  height: 70vh;
   justify-content: center;
   position: relative;
-  top: -5em;
+  top: -5vh;
+}
+
+.leBUT h2{
+  margin-bottom: 2vh;
 }
 
 .card {
   display: flex;
-  width: 40em;
-  height: 254px;
+  width: 55ch;
+  height: 36vh;
   background-image: linear-gradient(163deg, #00ff99 0%, #00b3ff 100%);
   border-radius: 20px;
   transition: all .3s;
   position: relative;
-  top: 7em;
+  top: 10vh;
   z-index: 0;
  }
  
  .card2 {
-  width: 40em;
-  height: 254px;
+  width: 100vh;
+  height: 36vh;
   background-color: #1a1a1a;
-  border-radius:20px;
+  border-radius: 20px;
   transition: all .2s;
   text-align: center;
  }
@@ -335,8 +260,82 @@ a{
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
  }
 
+/* Ma scolarité */
+#scolarite > h1 {
+  font-size: 4em;
+  position: relative;
+  left: 85vh;
+}
+
+#scolarite > img{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  z-index: -1;
+}
+
+#scolarite > ul > li{
+  margin: 0px 10em;
+}
+
+#scolarite .diplome {
+  position: relative;
+  width: 280px;
+  font-size: 0.90rem;
+  color: white;
+  background: #141414;
+  border: solid 5px;
+  border-image: linear-gradient(90deg, rgba(16,179,119,1) 0%, rgba(0,213,238,1) 100%, rgba(0,212,255,1) 100%);
+  border-image-slice: 1;
+  padding: 0px 5px;
+}
+
+#scolarite .diplome1{
+  bottom: 40vh;
+  left: 10vh;
+}
+
+#scolarite .diplome2{
+  bottom: 52vh;
+  left: 70vh;
+}
+
+#scolarite .diplome3{
+  bottom: 60vh;
+  left: 130vh;
+}
+
+/* Expériences */
+#experiences h1{
+  font-size: 4em;
+  position: relative;
+  top: -5vh;
+  left: 20vh;
+}
+
+#experiences img{
+  height: 30em;
+  position: relative;
+  top: -20vh;
+  z-index: -1;
+}
+
+.nomDiplome{
+  font-size: 1.2em;
+}
+
+#experiences article{
+  display: flex;
+  font-size: 0.8em;
+}
+
+.container {
+  position: relative;
+  top: -20vh; 
+}
+
 /* Compétences */
-.competences{
+#competences{
   position: relative; 
   display:flex;
   width:100%;
